@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<body>
+<div class="wrapper">
+    <main class="page">
+        <div class="page__contact contact">
+            <div class="contact__container">
+                <div class="contact__form form-contact">
+                    <div class="form-contact__header">
+                        <div class="form-contact__title">Contact Us</div>
+                        <div class="form-contact__subtitle">The Voodoo team is looking forward to hearing from you!</div>
+                    </div>
+                    <form class="form-contact__form" action="#" method="POST">
+                        <input autocomplete="off" type="text" name="form[]" placeholder="Full Name*" class="form-contact__input input">
+                        <input autocomplete="off" type="text" name="form[]" placeholder="Title/Position*" class="form-contact__input input">
+                        <select class="form-contact__select" name="form[]">
+                            <option value="" data-class="select__label" selected>Practice / Institution*</option>
+                            <option value="1">Practice</option>
+                            <option value="2">Institution</option>
+                        </select>
+                        <input autocomplete="off" type="email" name="form[]" placeholder="Email Address*" class="form-contact__input input">
+                        <input autocomplete="off" type="tel" name="form[]" placeholder="Phone Number*" class="form-contact__input input">
+                        <select class="form-contact__select" name="form[]">
+                            <option value="" data-class="select__label" selected>Medical Profession*</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                            <option value="4">Option 4</option>
+                            <option value="4">Option 5</option>
+                        </select>
+                        <select class="form-contact__select" name="form[]" data-class-modif="span">
+                            <option value="" data-class="select__label" selected>Type of Inquiry*</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                        <textarea data-autoheight autocomplete="off" name="form[]" placeholder="Enter Message*" class="form-contact__input form-contact__input_span form-contact__input_textarea input"></textarea>
+                        <button type="submit" class="button">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact__map" id="map"></div>
+            </div>
+        </div>
+    </main>
+</div>
+</body>
+</html>
