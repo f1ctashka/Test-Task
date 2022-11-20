@@ -68,17 +68,17 @@ function initMap() {
         'afterbegin',
         `
     	<div class="info-voodoo">
-						<h3 class="info-voodoo__title">Voodoo</h3>
-						<p class="info-voodoo__subtitle">137 Glasgow St., Unit 115 Kitchener, ON N2G 4X8 Ukraine</p>
-						<ul class="info-voodoo__list">
-							<li class="info-voodoo__item">
-								<a href="tel:1-800-480-9597" class="info-voodoo__link info-voodoo__link_phone">1-800-480-9597</a>
-							</li>
-							<li class="info-voodoo__item">
-								<a href="mailto:info@voodoo.com" class="info-voodoo__link info-voodoo__link_mail">info@voodoo.com</a>
-							</li>
-						</ul>
-			</div>
+    	    <h3 class="info-voodoo__title">Voodoo</h3>
+    	    <p class="info-voodoo__subtitle">137 Glasgow St., Unit 115 Kitchener, ON N2G 4X8 Ukraine</p>
+    	    <ul class="info-voodoo__list">
+    	        <li class="info-voodoo__item">
+    	            <a href="tel:1-800-480-9597" class="info-voodoo__link info-voodoo__link_phone">1-800-480-9597</a>
+    	        </li>
+    	        <li class="info-voodoo__item">
+    	            <a href="mailto:info@voodoo.com" class="info-voodoo__link info-voodoo__link_mail">info@voodoo.com</a>
+    	        </li>
+    	    </ul>
+    	</div>
         `
     );
     let infoWindow = new google.maps.InfoWindow({
