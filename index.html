@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="module" src="js/map.js"></script>
     <title>Contact Us</title>
 </head>
 <body>
@@ -16,29 +18,44 @@
                         <div class="form-contact__subtitle">The Voodoo team is looking forward to hearing from you!</div>
                     </div>
                     <form class="form-contact__form" action="#" method="POST">
-                        <input autocomplete="off" type="text" name="form[]" placeholder="Full Name*" class="form-contact__input input">
-                        <input autocomplete="off" type="text" name="form[]" placeholder="Title/Position*" class="form-contact__input input">
-                        <select class="form-contact__select" name="form[]">
-                            <option value="" data-class="select__label" selected>Practice / Institution*</option>
-                            <option value="1">Practice</option>
-                            <option value="2">Institution</option>
-                        </select>
-                        <input autocomplete="off" type="email" name="form[]" placeholder="Email Address*" class="form-contact__input input">
-                        <input autocomplete="off" type="tel" name="form[]" placeholder="Phone Number*" class="form-contact__input input">
-                        <select class="form-contact__select" name="form[]">
-                            <option value="" data-class="select__label" selected>Medical Profession*</option>
-                            <option value="1">Option 1</option>
-                            <option value="2">Option 2</option>
-                            <option value="3">Option 3</option>
-                            <option value="4">Option 4</option>
-                            <option value="4">Option 5</option>
-                        </select>
-                        <select class="form-contact__select" name="form[]" data-class-modif="span">
-                            <option value="" data-class="select__label" selected>Type of Inquiry*</option>
-                            <option value="1">Option 1</option>
-                            <option value="2">Option 2</option>
-                            <option value="3">Option 3</option>
-                        </select>
+                        <input autocomplete="off" type="text" name="form[]" required placeholder="Full Name*" class="form-contact__input input">
+                        <input autocomplete="off" type="text" name="form[]" required placeholder="Title / Position*" class="form-contact__input input">
+                        <div class="select-wrapper">
+                            <div class="select">
+                                <div class="select__trigger"><span>Practice / Institution*</span></div>
+                                <div class="custom-options">
+                                    <span class="custom-option selected" data-value="practice__institution">Practice / Institution</span>
+                                    <span class="custom-option" data-value="practice">Practice</span>
+                                    <span class="custom-option" data-value="institution">Institution</span>
+                                </div>
+                            </div>
+                        </div>
+                        <input autocomplete="off" type="email" name="form[]" required placeholder="Email Address*" class="form-contact__input input">
+                        <input autocomplete="off" type="tel" name="form[]" required placeholder="Phone Number*" class="form-contact__input input">
+                        <div class="select-wrapper">
+                            <div class="select">
+                                <div class="select__trigger"><span>Medical Profession*</span></div>
+                                <div class="custom-options">
+                                    <span class="custom-option selected" data-value="medical__profession">Medical Profession*</span>
+                                    <span class="custom-option" data-value="option1">Option 1</span>
+                                    <span class="custom-option" data-value="option2">Option 2</span>
+                                    <span class="custom-option" data-value="option3">Option 3</span>
+                                    <span class="custom-option" data-value="option4">Option 4</span>
+                                    <span class="custom-option" data-value="option5">Option 5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="select-wrapper">
+                            <div class="select">
+                                <div class="select__trigger"><span>Type of Inquiry*</span></div>
+                                <div class="custom-options">
+                                    <span class="custom-option selected" data-value="type">Type of Inquiry*</span>
+                                    <span class="custom-option" data-value="option1">Option 1</span>
+                                    <span class="custom-option" data-value="option2">Option 2</span>
+                                    <span class="custom-option" data-value="option3">Option 3</span>
+                                </div>
+                            </div>
+                        </div>
                         <textarea data-autoheight autocomplete="off" name="form[]" placeholder="Enter Message*" class="form-contact__input form-contact__input_span form-contact__input_textarea input"></textarea>
                         <button type="submit" class="button">Send Message</button>
                     </form>
@@ -48,5 +65,7 @@
         </div>
     </main>
 </div>
+<script src="js/app.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDp4mypNUkiisiumY6NRcEiE0nOY9EuOO0&region=UA&language=en&callback=initMap&v=weekly&_v=20221119215408" defer></script>
 </body>
 </html>
