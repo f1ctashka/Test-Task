@@ -189,6 +189,7 @@ textarea.input {
     user-select: none;
     width: 100%;
 }
+
 .select {
     position: relative;
     display: flex;
@@ -237,6 +238,11 @@ textarea.input {
     visibility: hidden;
     pointer-events: none;
     z-index: 2;
+    box-shadow: 0px 40px 32px -24px rgba(202, 203, 210, 0.25);
+}
+
+.open {
+    border-radius: 8px 8px 0px 0px;
 }
 
 .select.open .custom-options {
@@ -255,11 +261,14 @@ textarea.input {
     line-height: 60px;
     cursor: pointer;
     transition: all 0.5s;
+    margin: 10px;
+    border-radius: 10px;
 }
 .custom-option:hover {
     cursor: pointer;
     background-color: #F2F2F2;
- }
+    text-indent: 10px;
+}
 
 .contact {
     padding-top: 138px;
@@ -305,12 +314,14 @@ textarea.input {
 .form-contact__form {
     display: -ms-grid;
     display: grid;
+    grid-template-colums: repeat(2, 1fr);
     gap: 35px 32px;
 }
 
 .form-contact__input_textarea {
     margin-top: 20px;
     min-height: 338px;
+    /*grid-column: span 2;*/
 }
 
 .info-voodoo {
@@ -368,13 +379,6 @@ textarea.input {
     background: url('../img/envelope.svg') center/contain no-repeat;
 }
 
-.gm-ui-hover-effect {
-    display: none !important;
-}
-.gm-style-iw-tc::after {
-    display: none;
-}
-
 @media (min-width: 47.99875em) {
     .button {
         -ms-grid-column-align: start;
@@ -391,6 +395,11 @@ textarea.input {
     }
 
     .form-contact__input_span {
+        -ms-grid-column-span: 2;
+        grid-column: span 2;
+    }
+
+    .form-contact__span {
         -ms-grid-column-span: 2;
         grid-column: span 2;
     }
