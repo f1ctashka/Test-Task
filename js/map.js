@@ -67,7 +67,7 @@ function initMap() {
     markerInfo.insertAdjacentHTML(
         'afterbegin',
         `
-    	<div class="info-voodoo">
+   	<div class="info-voodoo">
     	    <h3 class="info-voodoo__title">Voodoo</h3>
     	    <p class="info-voodoo__subtitle">137 Glasgow St., Unit 115 Kitchener, ON N2G 4X8 Ukraine</p>
     	    <ul class="info-voodoo__list">
